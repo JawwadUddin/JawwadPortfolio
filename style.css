@@ -60,7 +60,7 @@ section div {
 }
 
 .typing {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 200px;
     position: relative;
 }
@@ -83,3 +83,15 @@ section div {
     }
 }
 
+@media screen and (max-width: 910px){
+    .typing {
+        font-size: 2rem;
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 560px){
+    .typing {
+        font-size: 1rem;
+        margin-top: 100px;
+    }
+}
