@@ -51,4 +51,4 @@ async function type() {
     }
 }
 
-// const runType = setInterval(type, 50);
+const runType = setInterval(type, 50);
