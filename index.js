@@ -20,3 +20,35 @@ function createCircle() {
 
 setInterval(createCircle, 150)   
 
+const typingContent = ["I'm Jawwad Uddin", "This is my portfolio", "I enjoy creative experiences", "Let's collaborate"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+let typingDiv = document.querySelector('.typing');
+let runningagain = "";
+
+async function type() {
+    if (count === typingContent.length) {
+        count = 0;
+    }
+    currentText = typingContent[count];
+    letter = currentText.slice(0, ++index);
+    typingDiv.textContent = letter;
+    if (letter.length === currentText.length){
+        count++;
+        index = 0;
+        clearInterval(runType)
+        if (typeof runningagain !== 'undefined') {clearInterval(runningagain)}
+        const timer = ms => new Promise(res => setTimeout(res, ms))
+        await timer(2000)
+        while (letter.length !== 0 ) {
+            letter = letter.slice(0, -1)
+            typingDiv.textContent = letter;
+            await timer(50)
+        }
+        runningagain = setInterval(type, 50);
+    }
+}
+
+const runType = setInterval(type, 50);

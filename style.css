@@ -15,9 +15,9 @@ section {
     overflow: hidden;
 }
 
-span {
+section span {
     pointer-events: none;
-    background: #d1a2a2;
+    /* background: #d1a2a2; */
     animation: animate 5s linear infinite;
 }
 
@@ -41,7 +41,13 @@ span {
         opacity: 0;
     }
 }
-section h1 {
+section div h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,4 +55,31 @@ section h1 {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     z-index: 2;
+    text-align: center;
+    width: 80%;
 }
+
+.typing {
+    font-size: 4rem;
+    margin-top: 200px;
+    position: relative;
+}
+
+.typing:after {
+    content: "";
+    border-right: solid 5px rgb(213, 27, 27);
+    margin-left: 5px;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
