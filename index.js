@@ -41,7 +41,7 @@ async function type() {
         clearInterval(runType)
         if (typeof runningagain !== 'undefined') {clearInterval(runningagain)}
         const timer = ms => new Promise(res => setTimeout(res, ms))
-        await timer(2000)
+        await timer(1500)
         while (letter.length !== 0 ) {
             letter = letter.slice(0, -1)
             typingDiv.textContent = letter;
@@ -51,4 +51,4 @@ async function type() {
     }
 }
 
-const runType = setInterval(type, 50);
+// const runType = setInterval(type, 50);

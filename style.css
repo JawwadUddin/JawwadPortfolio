@@ -17,7 +17,6 @@ section {
 
 section span {
     pointer-events: none;
-    /* background: #d1a2a2; */
     animation: animate 5s linear infinite;
 }
 
@@ -46,8 +45,9 @@ section div h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 500;
 }
-section div {
+.middle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,15 +60,17 @@ section div {
 }
 
 .typing {
-    font-size: 3.5rem;
-    margin-top: 200px;
+    font-size: 4rem;
+    margin-top: 180px;
     position: relative;
+    letter-spacing: 4px;
+    font-weight: 700;
 }
 
 .typing:after {
     content: "";
     border-right: solid 5px rgb(213, 27, 27);
-    margin-left: 5px;
+    margin-left: 3px;
     animation: blink 0.5s infinite ease;
 }
 
@@ -95,3 +97,40 @@ section div {
         margin-top: 100px;
     }
 }
+
+header {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    height: 15%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo {
+    border: solid 3px rgba(213, 27, 27, 0.611);
+    width: 50px;
+    height: 50px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    margin-left: 30px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+}
+
