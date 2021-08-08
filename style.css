@@ -134,3 +134,27 @@ header {
     color: black;
 }
 
+.sidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 12%;
+    z-index: 2;
+}
+.sidebar div {
+    margin-bottom: 100%;
+}
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+.uil {
+    font-size: 30px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.uil:hover {
+    color: rgb(213, 27, 27);
+}
+
