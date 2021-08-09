@@ -101,6 +101,7 @@ section div h1 {
     }
     .typing:after {
         margin-left: 1px;
+        border-right: 1px;
     }
     .navbar{
         display: none;
