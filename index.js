@@ -20,7 +20,7 @@ function createCircle() {
 
 setInterval(createCircle, 150)   
 
-const typingContent = ["I am Jawwad Uddin", "This is my portfolio", "I enjoy creative experiences", "Let's collaborate"];
+const typingContent = ["I'm Jawwad Uddin", "This is my portfolio", "I enjoy creative experiences", "Let's collaborate"];
 let count = 0;
 let index = 0;
 let currentText = "";
