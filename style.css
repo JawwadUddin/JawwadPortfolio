@@ -108,6 +108,7 @@ header {
     border-radius: 100%;
     font-size: 1.5rem;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .navbar a {
@@ -120,7 +121,9 @@ header {
     text-decoration: none;
     color: black;
 }
-
+.navbar a:hover {
+    color: rgb(213, 27, 27);
+}
 .burger div {
     width: 25px;
     height: 3px;
@@ -150,7 +153,7 @@ header {
 }
 .uil {
     font-size: 30px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
 .uil:hover {
