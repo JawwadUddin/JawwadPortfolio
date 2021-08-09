@@ -95,12 +95,15 @@ section div h1 {
 }
 @media screen and (max-width: 560px){
     .typing {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 100px;
         letter-spacing: 1px;
     }
     .typing:after {
         margin-left: 1px;
+    }
+    .navbar{
+        display: none;
     }
 }
 
@@ -145,7 +148,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    margin-top: 12%;
+    top:50%;
     z-index: 2;
 }
 .sidebar div {
