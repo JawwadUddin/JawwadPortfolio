@@ -183,19 +183,17 @@ header {
         right: 0;
         top: 10vh;
         height: 90vh;
-        /* background-color: #eeedfdc6; */
         background-color: rgba(255, 255, 255, 0.529);
         display: flex;
         flex-direction: column;
         width: 50%;
         align-items: center;
-        /* justify-content: space-around; */
+        justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
 
     }
     .navbar a {
-        padding: 25% 0px;
         opacity: 0;
     }
     .burger {
