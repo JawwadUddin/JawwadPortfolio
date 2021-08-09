@@ -1,3 +1,5 @@
+
+// generating background circles animation on the homepage 
 function createCircle() {
     const colors = ['#d4d1ff', '#9b99bd', '#6c6a7e', '#d1a2a2'];
     const bg = colors[Math.floor(Math.random()*colors.length)]
@@ -19,6 +21,8 @@ function createCircle() {
 }
 
 setInterval(createCircle, 150)   
+
+//creating the typing effect on the homepage
 
 const typingContent = ["I'm Jawwad Uddin", "This is my portfolio", "I enjoy creative experiences", "Let's collaborate"];
 let count = 0;
@@ -52,3 +56,25 @@ async function type() {
 }
 
 const runType = setInterval(type, 50);
+
+//creating the navbar animations
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.navbar a')
+
+    burger.addEventListener('click', ()=> {
+        navbar.classList.toggle('nav-active');
+        navLinks.forEach((link, index)=> {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.1s ease forwards ${index/7 + 0.3}s`
+            }
+        })
+        burger.classList.toggle('toggle')
+    })
+}
+
+navSlide()
