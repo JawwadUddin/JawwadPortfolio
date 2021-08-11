@@ -326,20 +326,13 @@ header {
     }
 }
 @media screen and (max-width: 800px){
-    .about-me {
-        margin-left: 10px;
-    }
     .about-me p {
         font-size: 0.8rem;
-    }
-    .profile-img {
-        height: 60%;
     }
 }
 @media screen and (max-width: 700px){
     .about-page {
         flex-direction: column;    
-        min-height: 100px;
     }
     .profile-img {
         margin-top: 250px;
