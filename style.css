@@ -339,7 +339,6 @@ header {
 @media screen and (max-width: 700px){
     .about-page {
         flex-direction: column;    
-        border: solid 1px red;    
         min-height: 100px;
     }
     .profile-img {
