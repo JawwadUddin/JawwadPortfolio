@@ -227,9 +227,9 @@ header {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* working on skills page styling */
+/* working on about page styling */
 
-.skills-page {
+.about-page {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -287,4 +287,70 @@ header {
 .about-me a:hover {
     background-color: rgb(213, 27, 27, 0.611);
     color: white;
+}
+
+/* Media queries for the homepage*/
+@media screen and (max-width: 1200px){
+    .about-me {
+        width: 55%;
+        margin-left: 30px;
+    }
+    .profile-img {
+        height: 65%;
+    }
+
+}
+@media screen and (max-width: 1000px){
+    .about-me {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .about-me p {
+        margin-bottom: 10px;
+    }
+    .about-me p:last-of-type {
+        margin-bottom: 30px;
+    }
+    .profile-img {
+        height: 60%;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .about-me {
+        margin-left: 10px;
+    }
+    .profile-img {
+        height: 60%;
+    }
+}
+@media screen and (max-width: 800px){
+    .about-me {
+        margin-left: 10px;
+    }
+    .about-me p {
+        font-size: 0.8rem;
+    }
+    .profile-img {
+        height: 60%;
+    }
+}
+@media screen and (max-width: 700px){
+    .about-page {
+        flex-direction: column;    
+        border: solid 1px red;    
+        min-height: 100px;
+    }
+    .profile-img {
+        margin-top: 250px;
+    }
+    .about-me {
+        width: 90%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
