@@ -7,6 +7,7 @@
 body {
     min-height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 section {
     width: 100%;
@@ -288,7 +289,7 @@ header {
     color: white;
 }
 
-/* Media queries for the homepage*/
+/* Media queries for the about me page*/
 @media screen and (min-width:1600px) {
     .about-me {
         width: 55%;
@@ -419,16 +420,17 @@ header {
 }
 .skill-list {
     width: 80%;
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .skill-item {
     width: 25%;
-    height: 180px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,16 +447,36 @@ header {
     filter: grayscale(0%);
 }
 .skill-item:hover {
-    background-color: rgb(255, 252, 252);
-    box-shadow: 5px 5px 5px rgba(182, 182, 182, 0.486);
+    background-color: white;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 }
 .skill-list h3 {
     margin-top: 20px;
-    visibility: hidden;
+    /* visibility: hidden; */
     font-family: 'Roboto';
     font-size: 0.8rem;
     letter-spacing: 1px;
 }
 .skill-item:hover h3 {
     visibility: visible;
+}
+/* Media queries for the skills*/
+@media screen and (max-width: 700px) {
+    .skill-item {
+        width: 30%;
+        border: solid 1px red;
+    }
+    .skill-item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .skill-item {
+        width: 50%;
+    }
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
 }
