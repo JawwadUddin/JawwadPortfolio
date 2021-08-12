@@ -89,6 +89,7 @@ header {
     width: 100%;
     padding: 0 5%;
     margin: 0 auto;
+    margin-top: 20px;
     height: 15%;
     position: relative;
     display: flex;
