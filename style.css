@@ -6,11 +6,11 @@
 
 body {
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #eeedfd;
     overflow: hidden;
 }
@@ -231,29 +231,25 @@ header {
 
 .about-page {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.profile-img {
-    height: 80%;
+    overflow: hidden;
 }
 
 .profile-img img {
     border: solid 10px #eeedfd;
     width: auto;
-    height: 100%;
-    transition: ease-in-out 0.3s;
+    height: 500px;
 }
 
 .about-me {
-    height: 80%;
     width: 40%;
     font-family: 'Lato', sans-serif;
     font-size: 0.9rem;
     margin-left: 100px;
+    border: solid 1px green;
 }
 .about-me h1 {
     font-family: 'Roboto', sans-serif;
@@ -290,13 +286,63 @@ header {
 }
 
 /* Media queries for the homepage*/
+@media screen and (min-width:1600px) {
+    .about-me {
+        width: 55%;
+        font-size: 1.5rem;
+    }
+    .about-me p {
+        line-height: 2rem;
+    }
+    .about-me h1 {
+        font-size: 3rem;
+    }
+    .profile-img img {
+        height: 600px;
+    }
+}
+@media screen and (min-width:1400px) {
+    .about-me {
+        width: 50%;
+        margin-left: 50px;
+        font-size: 1.25rem;
+    }
+    .about-me h1 {
+        font-size: 2rem;
+    }
+    .about-me p {
+        line-height: 2rem;
+    }
+    .about-me h1 {
+        font-size: 3rem;
+    }
+    .profile-img img {
+        height: 550px;
+    }
+}
+@media screen and (min-width:1201px) {
+    .about-me {
+        width: 45%;
+        margin-left: 50px;
+        font-size: 0.8rem;
+    }
+    .about-me p {
+        line-height: 1.25rem;
+    }
+    .about-me h1 {
+        font-size: 2rem;
+    }
+    .profile-img img {
+        height: 500px;
+    }
+}
 @media screen and (max-width: 1200px){
     .about-me {
         width: 55%;
         margin-left: 30px;
     }
-    .profile-img {
-        height: 65%;
+    .profile-img img {
+        height: 450px; 
     }
 
 }
@@ -312,8 +358,8 @@ header {
     .about-me p:last-of-type {
         margin-bottom: 30px;
     }
-    .profile-img {
-        height: 60%;
+    .profile-img img{
+        height: 375px;
     }
 
 }
@@ -321,21 +367,19 @@ header {
     .about-me {
         margin-left: 10px;
     }
-    .profile-img {
-        height: 60%;
-    }
 }
 @media screen and (max-width: 800px){
     .about-me p {
         font-size: 0.8rem;
     }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 880px){
     .about-page {
+        display: flex;
         flex-direction: column;    
     }
-    .profile-img {
-        margin-top: 250px;
+    .profile-img img{
+        margin-top: 25px;
     }
     .about-me {
         width: 90%;
@@ -345,11 +389,18 @@ header {
         align-items: center;
     }
 
+}
 
+
+/* skills page  */
+/* .skills {
+    width: 100%;
+    height: 100vh;
+    border: solid 1px green;
 }
-@media screen and (max-width: 600px){
-    .profile-img {
-        margin-top: 300px;
-    }
-    
-}
+.skills div {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    margin-top: 30px;
+} */
