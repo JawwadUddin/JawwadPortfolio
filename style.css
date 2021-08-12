@@ -426,7 +426,7 @@ header {
 .slider {
     width: 80%;
     height: 500px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -440,20 +440,20 @@ header {
 .project-item {
     width: 100%;
     height: 100%;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .project-item img {
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
     padding: 5%;
     width: 50%;
 }
 .project-data {
     width: 50%;
     height: 100%;
-    border: solid gold 1px;
+    /* border: solid gold 1px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
