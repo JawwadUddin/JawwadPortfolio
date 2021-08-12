@@ -396,12 +396,6 @@ header {
 }
 
 
-
-
-
-
-
-
 /* projects-page */
 .project-section {
     width: 100%;
@@ -431,8 +425,8 @@ header {
 }
 .slider {
     width: 80%;
-    height: 400px;
-    /* border: solid 1px red; */
+    height: 500px;
+    border: solid 1px red;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -440,27 +434,26 @@ header {
 }
 .project-container {
     width: 80%;
-    height: 400px;
+    height: 500px;
     margin: auto 0;
 }
 .project-item {
     width: 100%;
     height: 100%;
-    /* border: solid 1px green; */
+    border: solid 1px green;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .project-item img {
-    flex:1;
-    /* border: solid blue 1px; */
+    border: solid blue 1px;
     padding: 5%;
-    width: 100%;
+    width: 50%;
 }
 .project-data {
-    flex: 1;
+    width: 50%;
     height: 100%;
-    /* border: solid gold 1px; */
+    border: solid gold 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,7 +488,7 @@ header {
 }
 .left-arrow, .right-arrow {
     width: 10%;
-    height: 400px;
+    height: 100%;
     /* border: solid 1px blue; */
     display: flex;
     align-items: center;
@@ -511,11 +504,57 @@ header {
     color: red;
 }
 
-
-
-
-
-
+/* media queries for the projects page  */
+@media screen and (max-width:1400px) {
+    .project-container {
+        width: 90%;
+    }
+    .left-arrow, .right-arrow {
+        width: 5%;
+    }
+}
+@media screen and (max-width:1300px) {
+    .slider {
+        width: 90%;
+    }
+}
+@media screen and (max-width:1100px) {
+    .project-item img {
+        width: 45%;
+    }
+    .project-data {
+        width: 60%;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .project-data {
+        padding: 0;
+    }
+}
+@media screen and (max-width:800px) {
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-data{
+        width: 100%;
+        padding: 5%;
+    }
+    .project-data p {
+        line-height: 1.2rem;
+    }
+    .project-item img {
+        width: 55%;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:580px) {
+    .project-item img {
+        width: 55%;
+        margin-top: 20px;
+    }
+}
 
 /* skills page  */
 .skills {
