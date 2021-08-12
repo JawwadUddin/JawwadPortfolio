@@ -403,6 +403,14 @@ header {
     font-family: 'Roboto', sans-serif;
     position: relative;
 }
+.centre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .project-header {
     width: 400px;
     text-align: center;
@@ -536,6 +544,10 @@ header {
     .project-item {
         flex-direction: column;
         align-items: center;
+    }
+    .left-arrow, .right-arrow .uil {
+        font-size: 2rem;
+        color: red;
     }
     .project-data{
         width: 100%;
