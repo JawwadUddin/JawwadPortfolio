@@ -162,6 +162,74 @@ header {
 .sidebar div .uil:hover {
     color: rgb(213, 27, 27);
 }
+.home-scroll {
+    /* border: solid 1px black; */
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 10px;
+    font-family: 'Lato';
+    width: 100%;
+
+}
+.home-scroll a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-scroll .mouse {
+    font-size: 1.5rem;
+    color: rgb(213, 27, 27);
+    animation: wiggle 1s linear infinite;
+}
+.home-scroll .arrow {
+    font-size: 1.25rem;
+    color: rgb(213, 27, 27);
+    animation: jump 1s linear infinite;
+}
+.home-scroll span {
+    animation: none;
+    margin: 0 10px;
+    color: rgb(213, 27, 27);
+}
+
+@keyframes jump {
+    0%
+    {
+        transform: translateY(-2px);
+    }
+    100%
+    {
+        transform: translateY(2px);
+    }
+}
+
+@keyframes wiggle {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    25% 
+    {
+        transform: rotate(10deg);
+    }
+    50% 
+    {
+        transform: rotate(0deg);
+    }
+    75% 
+    {
+        transform: rotate(-10deg);
+    }
+    100% 
+    {
+        transform: rotate(0deg);
+    }
+
+}
 
 /* Media queries for the homepage*/
 @media screen and (max-width: 1100px){
@@ -209,6 +277,7 @@ header {
         border-right: solid 3px rgb(213, 27, 27);
     }
 }
+
 .nav-active {
     transform: translateX(0%);
 }
