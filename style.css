@@ -680,7 +680,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 .contact-me-head {
     width: 100%;
@@ -812,4 +812,60 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #fff;
     color: black;
+}
+
+/* media queries for contact me page  */
+@media screen and (max-width: 1000px) {
+    .boxes h3 {
+        color: black;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .boxes h3 {
+        color: black;
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .boxes {
+        margin-top: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .contact-section {
+        min-height: 800px;
+    }
+    .left-side {
+        width: 100%;
+    }
+    .left-side input {
+        margin-bottom: 20px;
+    }
+    .right-side {
+        width: 100%;
+    }
+    form input[type="submit"] {
+        margin-top: 50px;
+        position: absolute;
+        top: 100%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+}
+@media screen and (max-width: 500px) {
+    .boxes {
+        width: 70%;
+    }
 }
