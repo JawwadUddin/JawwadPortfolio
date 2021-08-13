@@ -116,14 +116,17 @@
                     <div class="circles"><i class="uil uil-envelope-alt"></i></div><h3>m.m.j.uddin12@gmail.com</h3>
                 </div>
             </div>
-            <form action="">
+            <form action="https://formspree.io/f/mayalnjp" method="POST" id="my-form" autocomplete="off">
                 <div class="left-side">
-                    <input type="text" id="name"placeholder="Your Name">
-                    <input type="text" id="email"placeholder="Your Email">
-                    <input type="text" id="phone-number" placeholder="Your Number">
+                    <input type="hidden" name="_next" value="#" />
+                    <input type="hidden" name="_subject" value="Website contact"/>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <input type="text" id="email" name="_replyto" placeholder="Your Email">
+                    <input type="text" id="phone-number" name="number" placeholder="Your Number">
                 </div>
                 <div class="right-side">
-                    <textarea name="textarea-content" placeholder="Tell me about your offer" id="text" cols="30" rows="10"></textarea>
+                    <textarea name="Desciption" placeholder="Tell me about your offer" id="text" cols="30" rows="10"></textarea>
                 </div>
                 <input type="submit" value="SEND MESSAGE">
             </form>
