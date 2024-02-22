@@ -9,7 +9,8 @@ body {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: monospace;
 }
 section {
     width: 100%;
@@ -194,6 +195,7 @@ header {
 .home-scroll span {
     animation: none;
     margin: 0 10px;
+    font-size: 1rem;
     color: rgb(213, 27, 27);
 }
 
@@ -469,7 +471,7 @@ header {
 /* projects-page */
 .project-section {
     width: 100%;
-    min-height: 100vh;
+    padding: 100px 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -486,7 +488,6 @@ header {
     width: 400px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 100px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -588,14 +589,13 @@ header {
 /* skills page  */
 .skills {
     width: 100%;
-    min-height: 100vh;
+    padding: 100px 0;
     background: #f9f8ff;
     overflow: hidden;
     display: flex;
 }
 .skills h1 {
     display: inline;
-    margin-top: 30px;
     position: absolute; 
     left: 50%;
     transform: translate(-50%, 0%);
@@ -612,7 +612,6 @@ header {
     min-height: 500px;
     margin: 0 auto;
     margin-top: 100px;
-    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -650,6 +649,7 @@ header {
     visibility: visible;
 }
 /* Media queries for the skills*/
+
 @media screen and (max-width: 700px) {
     .skill-item {
         width: 30%;
@@ -673,7 +673,7 @@ header {
 
 .contact-me {
     width: 100%;
-    min-height: 100vh;
+    padding: 100px 0;
     background: #FAFAFA;
     display: flex;
     flex-direction: column;
@@ -1176,11 +1176,19 @@ form input[type="submit"]:hover {
         display: none;
     }
 }
+@media screen and (max-width: 880px){
+    .project-section, .skills, .contact-me {
+        padding: 50px 0;
+    }
+}
 @media screen and (max-width:580px) {
     .project-content {
         width: 100%;
     }
     .project-description {
         padding: 25px;
+        color: #03e8f451;
     }
 }
+/* '#03e9f4', '#03e8f4c6', '#03e8f48e', '#03e8f451' */
+
